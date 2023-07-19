@@ -8,7 +8,8 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-/* header styles */
+/* header styles  starts from here*/
+
 
 /* navbar styles */
 nav {
@@ -72,12 +73,19 @@ nav ul a {
     font-size: 30px;
 }
 
-/* main{
-    
-} */
+/* header styles  ends here*/
+
+
+
+
+/* main section starts from here  */
+
+
+
 /* banner section styles */
+
 .banner {
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
     display: flex;
     margin-top: 50px;
@@ -86,7 +94,7 @@ nav ul a {
 
 .banner-content {
     width: 50%;
-    
+
 }
 
 .banner-title {
@@ -147,8 +155,8 @@ nav ul a {
 }
 
 
+/* we are gamer section styles */
 
-/* gamer section styles */
 
 .gamer-section {
     display: flex;
@@ -217,62 +225,178 @@ nav ul a {
 }
 
 
+/* Online games section styles  */
+
+
+
+.online-games-section {
+    max-width: 85%;
+    margin: 70px auto 0;
+}
+
+.online-games-title {
+    text-align: center;
+}
+
+.online-games-title h2 {
+    font-size: 2.5rem;
+    color: #0B0223;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.style-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-games-title p {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.online-games {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.online-games-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-display {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-container {
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #FF42A5;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-overlay .fa-solid {
+    font-size: 40px;
+}
+
+.watch-now {
+    margin-top: 10px;
+    color: #FF42A5;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-title {
+    color: #534C64;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+/* Play games section styles */
+
+.play-games {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85%;
+    margin: 70px auto 0px;
+    gap: 120px;
+}
+
+.play-games-images {
+    width: 50%;
+}
+
+.small-image {
+    position: relative;
+    bottom: 170px;
+    right: 60px;
+}
+
+.play-games-content {
+    display: block;
+    width: 50%;
+    margin-right: 50px;
+}
+
+.play-games-content h2{
+    font-size: 2.6rem;
+    color: #0B0223;
+    font-weight: 800;
+    line-height: 70px;
+    margin-bottom: 20px;
+    text-align: right;
+     
+}
+.play-style-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-games-content p {
+    color: #534C64;
+    text-align: right;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+
+
 
 
 /* Mobile view responsive styles */
 
 @media screen and (max-width: 425px) {
-
-    nav,
-    nav ul {
-        flex-direction: column;
-    }
-
-    .nav-btn {
-        margin-top: 40px;
-        margin-bottom: 20px;
-    }
-    nav ul li {
-        margin-top: 30px;
-    }
-
-    .banner{
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-    .banner-content {
-        width: 100%;
-        margin-top: 50px;
-    }
-    .banner-image {
-        width: 100%;
-    }
-    .gamer-section{
-        flex-direction: column-reverse;
-        padding: 20px;
-        margin-top: 40px;
-    }
-    .gamer-image {
-        width: 100%;
-    }
-    
-    .gamer-content {
-        width: 100%;
-        align-items: center;
-    }
-    .gamer-description{
-        text-align: center;
-    }
-    .gamer-end-title {
-        text-align: center;
-    }
-
-}
-
-
-/* Tablet view responsive styles */
-
-@media screen and (min-width:430px) and (max-width:768px) {
 
     nav,
     nav ul {
@@ -288,44 +412,210 @@ nav ul a {
     nav ul li {
         margin-top: 30px;
     }
-    .gamer-section{
+
+    .banner {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .banner-content {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .gamer-section {
+        flex-direction: column-reverse;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .gamer-image {
+        width: 100%;
+    }
+
+    .gamer-content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .gamer-description {
+        text-align: center;
+    }
+
+    .gamer-end-title {
+        text-align: center;
+    }
+
+    .online-games-section {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .online-games {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .online-games-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .play-games {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+        gap: 60px;
+    }
+
+    .play-games-images {
+        width: 80%;
+    }
+    .play-games-content {
+        width: 100%;
+        margin-right: 0;
+    }
+    .small-image {
+        width: 100%;
+        bottom: 100px;
+        right: 40px;
+    }
+    .play-games-content h2{
+        text-align: center;
+    }
+    .play-games-content p{
+        text-align: center;
+    }
+    .style-title{
+        text-align: center;
+    }
+
+
+}
+
+
+/* Tablet view responsive styles */
+
+@media screen and (min-width:430px) and (max-width:768px) {
+
+    nav,
+    nav ul {
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        margin-top: 30px;
+    }
+
+    .gamer-section {
         flex-direction: column-reverse;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
         width: 100%;
 
     }
+
     .banner-content {
         width: 100%;
         margin-top: 50px;
         text-align: center;
     }
 
-    .banner-description{
+    .banner-description {
         text-align: center;
     }
+
     .banner-image {
         width: 100%;
     }
-    .gamer-section{
+
+    .gamer-section {
         flex-direction: column-reverse;
         padding: 20px;
         margin-top: 40px;
     }
+
     .gamer-image {
         width: 100%;
     }
-    
+
     .gamer-content {
         width: 100%;
         align-items: center;
     }
-    .gamer-description{
+
+    .gamer-description {
         text-align: center;
     }
+
     .gamer-end-title {
         text-align: center;
     }
+
+    .online-games-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .online-games {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .online-games-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .play-games {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .play-games-images {
+        width: 80%;
+    }
+    .play-games-content {
+        width: 100%;
+    }
+    .small-image {
+        width: 100%;
+        bottom: 100px;
+        right: 40px;
+    }
+    .play-games-content h2 {
+        text-align: center;
+    }
+    .play-games-content p{
+        text-align: center;
+    }
+    .style-title{
+        text-align: center;
+    }
+
 
 }
