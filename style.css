@@ -365,16 +365,17 @@ nav ul a {
     margin-right: 50px;
 }
 
-.play-games-content h2{
+.play-games-content h2 {
     font-size: 2.6rem;
     color: #0B0223;
     font-weight: 800;
     line-height: 70px;
     margin-bottom: 20px;
     text-align: right;
-     
+
 }
-.play-style-title{
+
+.play-style-title {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -389,6 +390,112 @@ nav ul a {
     line-height: 30px;
     margin-bottom: 20px;
 }
+
+
+
+
+/* more games section styles  */
+
+
+.more-games {
+    padding: 30px 100px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.more-games-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    padding-bottom: 1rem;
+
+}
+
+.more-games-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #FFF;
+    border-radius: 50px;
+}
+
+.more-games-box p {
+    padding-left: 10px;
+}
+
+.more-games-container :hover {
+    border: 2px solid rgb(252, 51, 151);
+    padding: 5px;
+    color: rgb(252, 51, 151);
+}
+
+.more-games-box :hover {
+    border: none;
+}
+
+/* footer styles  */
+
+
+.footer-section {
+    background-color: rgb(0, 0, 46);
+    color: #FFF;
+    text-align: center;
+    padding: 90px 100px;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-logo h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.footer-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.footer-icons li {
+    list-style: none;
+}
+
+.footer-descriptions {
+    color: rgba(255, 255, 255, 0.60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer-end{
+    margin-top: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+}
+
 
 
 
@@ -483,25 +590,75 @@ nav ul a {
     .play-games-images {
         width: 80%;
     }
+
     .play-games-content {
         width: 100%;
         margin-right: 0;
     }
+
     .small-image {
         width: 100%;
         bottom: 100px;
         right: 40px;
     }
-    .play-games-content h2{
-        text-align: center;
-    }
-    .play-games-content p{
-        text-align: center;
-    }
-    .style-title{
+
+    .play-games-content h2 {
         text-align: center;
     }
 
+    .play-games-content p {
+        text-align: center;
+    }
+
+    .style-title {
+        text-align: center;
+    }
+
+
+    .more-games {
+        padding: 5px 200px;
+    }
+
+    .more-games-container {
+        display: grid;
+        grid-template-areas: 'div div div';
+    }
+
+    .more-games-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .more-games-box {
+        padding: 10px;
+    }
+    .footer-section{
+        padding: 50px;
+    }
+
+    .footer-container{
+        position: relative;
+    }
+    .footer-items{
+        display: grid;
+        grid-template-areas: 'p p p';
+        position: relative;
+    }
+    .footer-icons{
+        display: grid;
+        grid-template-areas: 'p p p';
+        position: relative;
+        gap: 30px;
+    }
+    .footer-descriptions{
+        display: grid;
+        grid-template-areas: 'p p';
+        position: relative;
+    }
 
 }
 
@@ -599,22 +756,50 @@ nav ul a {
     .play-games-images {
         width: 80%;
     }
+
     .play-games-content {
         width: 100%;
     }
+
     .small-image {
         width: 100%;
         bottom: 100px;
         right: 40px;
     }
+
     .play-games-content h2 {
         text-align: center;
     }
-    .play-games-content p{
+
+    .play-games-content p {
         text-align: center;
     }
-    .style-title{
+
+    .style-title {
         text-align: center;
+    }
+
+    .more-games {
+        padding: 5px 200px;
+    }
+
+    .more-games-container {
+        display: grid;
+        grid-template-areas: 'div div div';
+    }
+
+    .more-games-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+        font-size: 10px;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .more-games-box {
+        padding: 10px;
     }
 
 
